@@ -1,0 +1,6 @@
+framework module Pods_UIKit_GooglePlaces {
+  umbrella header "Pods-UIKit-GooglePlaces-umbrella.h"
+
+  export *
+  module * { export * }
+}

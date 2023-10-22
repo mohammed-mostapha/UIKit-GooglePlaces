@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109C7B0182BAA5175B96DE5B /* Pods_UIKit_GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBA35C61359F5EA78B0880 /* Pods_UIKit_GooglePlaces.framework */; };
+		D9032A7F2ADFE86200B7EB54 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9032A7E2ADFE86200B7EB54 /* ResultsViewController.swift */; };
+		D9063EF52ADFEFDE004A2C3B /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9063EF42ADFEFDE004A2C3B /* GooglePlacesManager.swift */; };
 		D989548F2ADD67AE0067949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989548E2ADD67AE0067949F /* AppDelegate.swift */; };
 		D98954912ADD67AE0067949F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98954902ADD67AE0067949F /* SceneDelegate.swift */; };
 		D98954932ADD67AE0067949F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98954922ADD67AE0067949F /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EEBA35C61359F5EA78B0880 /* Pods_UIKit_GooglePlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKit_GooglePlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D8E2094640C78AE435EC19 /* Pods-UIKit-GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-GooglePlaces.release.xcconfig"; path = "Target Support Files/Pods-UIKit-GooglePlaces/Pods-UIKit-GooglePlaces.release.xcconfig"; sourceTree = "<group>"; };
+		A4AB86BF875A07F96F027E6C /* Pods-UIKit-GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-GooglePlaces.debug.xcconfig"; path = "Target Support Files/Pods-UIKit-GooglePlaces/Pods-UIKit-GooglePlaces.debug.xcconfig"; sourceTree = "<group>"; };
+		D9032A7E2ADFE86200B7EB54 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D9063EF42ADFEFDE004A2C3B /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		D989548B2ADD67AE0067949F /* UIKit-GooglePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-GooglePlaces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D989548E2ADD67AE0067949F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98954902ADD67AE0067949F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109C7B0182BAA5175B96DE5B /* Pods_UIKit_GooglePlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BBA098D42F83FF90204D377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EEBA35C61359F5EA78B0880 /* Pods_UIKit_GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2540FC4C193B350A8C1932DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB86BF875A07F96F027E6C /* Pods-UIKit-GooglePlaces.debug.xcconfig */,
+				31D8E2094640C78AE435EC19 /* Pods-UIKit-GooglePlaces.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D98954822ADD67AE0067949F = {
 			isa = PBXGroup;
 			children = (
 				D989548D2ADD67AE0067949F /* UIKit-GooglePlaces */,
 				D989548C2ADD67AE0067949F /* Products */,
+				2540FC4C193B350A8C1932DE /* Pods */,
+				1BBA098D42F83FF90204D377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				D98954972ADD67AF0067949F /* Assets.xcassets */,
 				D98954992ADD67AF0067949F /* LaunchScreen.storyboard */,
 				D989549C2ADD67AF0067949F /* Info.plist */,
+				D9032A7E2ADFE86200B7EB54 /* ResultsViewController.swift */,
+				D9063EF42ADFEFDE004A2C3B /* GooglePlacesManager.swift */,
 			);
 			path = "UIKit-GooglePlaces";
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D989549F2ADD67AF0067949F /* Build configuration list for PBXNativeTarget "UIKit-GooglePlaces" */;
 			buildPhases = (
+				82BFC36F690689FB359F422A /* [CP] Check Pods Manifest.lock */,
 				D98954872ADD67AE0067949F /* Sources */,
 				D98954882ADD67AE0067949F /* Frameworks */,
 				D98954892ADD67AE0067949F /* Resources */,
+				9A8D1790EF5379B84FDF40E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82BFC36F690689FB359F422A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKit-GooglePlaces-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8D1790EF5379B84FDF40E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKit-GooglePlaces/Pods-UIKit-GooglePlaces-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKit-GooglePlaces/Pods-UIKit-GooglePlaces-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKit-GooglePlaces/Pods-UIKit-GooglePlaces-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D98954872ADD67AE0067949F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +215,8 @@
 				D98954932ADD67AE0067949F /* ViewController.swift in Sources */,
 				D989548F2ADD67AE0067949F /* AppDelegate.swift in Sources */,
 				D98954912ADD67AE0067949F /* SceneDelegate.swift in Sources */,
+				D9032A7F2ADFE86200B7EB54 /* ResultsViewController.swift in Sources */,
+				D9063EF52ADFEFDE004A2C3B /* GooglePlacesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +363,14 @@
 		};
 		D98954A02ADD67AF0067949F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AB86BF875A07F96F027E6C /* Pods-UIKit-GooglePlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2T35XX5CJS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UIKit-GooglePlaces/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +393,14 @@
 		};
 		D98954A12ADD67AF0067949F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D8E2094640C78AE435EC19 /* Pods-UIKit-GooglePlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2T35XX5CJS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UIKit-GooglePlaces/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
